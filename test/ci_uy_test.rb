@@ -29,4 +29,9 @@ describe CiUY do
     ci = "1.111.222.1"
     assert !CiUY.validate_ci(ci)
   end
+
+  it "should get a valid random ci number" do
+    ci = CiUY.get_random_ci
+    assert CiUY.validate_ci(ci)
+  end
 end
