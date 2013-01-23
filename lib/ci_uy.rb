@@ -1,6 +1,9 @@
 module CiUY
   def self.get_validation_digit(ci)
     ci.gsub!(/\D/, '')
+    if ci.size == 6 
+      ci = '0'+ci
+    end
     a = 0
     (0..6).each do |i|
       a += ("2987634"[i].chr.to_i * ci[i].chr.to_i)
