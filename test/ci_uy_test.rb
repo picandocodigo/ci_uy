@@ -34,4 +34,9 @@ describe CiUY do
     ci = CiUY.get_random_ci
     assert CiUY.validate_ci(ci)
   end
+
+  it "should validate ci's with 6 digits" do
+    ci = "1111113"
+    assert CiUY.validate_ci(ci)
+  end
 end
