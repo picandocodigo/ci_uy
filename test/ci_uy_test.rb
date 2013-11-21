@@ -39,4 +39,16 @@ describe CiUY do
     ci = "1111113"
     assert CiUY.validate_ci(ci)
   end
+
+  it "should accept integers as input" do
+    ci = 51691703
+    assert CiUY.validate_ci(ci)
+  end
+
+  it "should use more idiomatic aliases for methids" do
+    ci = CiUY.random
+    assert CiUY.validate(ci)
+    assert CiUY.validation_digit(ci) == ci[-1]
+  end
+
 end
