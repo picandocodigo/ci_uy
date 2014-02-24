@@ -8,15 +8,13 @@ Install:
 
 `gem install ci_uy`
 
-Use:
+Try it:
 ``` ruby
-fernando@hoth ~ $ irb
-1.9.3-p286 :001 > require 'ci_uy'
+fernando@hoth ~ $ rake console
+1.9.3-p484 :001 > CiUY.validate("1.111.111-1")
  => true
-1.9.3-p286 :002 > CiUY.validate("1.111.111-1")
- => true
-1.9.3-p286 :003 > CiUY.validation_digit("2222222")
+1.9.3-p484 :002 > CiUY.validation_digit("2222222")
  => "2"
-1.9.3-p286 :004 > CiUY.random
+1.9.3-p484 :003 > CiUY.random
  => "13082956"
  ```
