@@ -1,5 +1,4 @@
 module CiUY
-
   def self.get_validation_digit(ci)
     ci = transform(ci)
     ci = '0' + ci if ci.size == 6

@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'ci_uy'
+
+args = ARGV.dup
+
+case args[0]
+when ("validate" || "validate_ci")
+  puts CiUY.validate args[1].dup
+when ("random" || "get_random_ci")
+  puts CiUY.random
+when ("validation_digit" || "get_validation_digit")
+  puts CiUY.validation_digit args[1].dup
+else
+  puts "You're wrong"
+end
+CiUY.validate("36089925")
