@@ -18,12 +18,12 @@ fernando@hoth ~ $ rake console
 1.9.3-p484 :003 > CiUY.random
  => "13082956"
  ```
- 
- Once the gem is installed in your system, you can use 'ci_uy' from
- the command line:
- 
- ```
-$ gem install ci_uy-0.0.6.gem 
+
+Once the gem is installed in your system, you can use 'ci_uy' from the
+command line:
+
+```bash
+$ gem install ci_uy-0.0.6.gem
 Thanks for installing CiUY!
 Successfully installed ci_uy-0.0.6
 1 gem installed
@@ -37,3 +37,17 @@ true
 $ ci_uy validation_digit "2.222.222"
 2
  ```
+
+## LICENSE
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
