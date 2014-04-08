@@ -4,14 +4,14 @@ module CiUY
     ci = '0' + ci if ci.size == 6
     a = 0
     (0..6).each do |i|
-      a += ("2987634"[i].chr.to_i * ci[i].chr.to_i)
+      a += ("2987634"[i].to_i * ci[i].to_i)
     end
-    (10 - (a % 10)).to_s[-1].chr
+    (10 - (a % 10)).to_s[-1]
   end
 
   def self.validate_ci(ci)
     ci = transform(ci)
-    dig = ci[-1].chr
+    dig = ci[-1]
     ci = ci[0..-2]
     self.get_validation_digit(ci) == dig
   end
