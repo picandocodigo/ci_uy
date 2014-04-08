@@ -45,7 +45,7 @@ describe CiUY do
     assert CiUY.validate_ci(ci)
   end
 
-  it "should use more idiomatic aliases for methids" do
+  it "should use more idiomatic aliases for methods" do
     ci = CiUY.random
     assert CiUY.validate(ci)
     assert CiUY.validation_digit(ci) == ci[-1]

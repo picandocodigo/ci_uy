@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'ci_uy'
-  s.version     = '0.0.7'
-  s.date        = '2014-03-31'
+  s.version     = '0.1.0'
+  s.date        = '2014-04-08'
   s.summary     = "CiUY Validate Uruguayan cedula numbers"
   s.description = "A gem to validate Uruguayan Identity Documents (Cedula de Identidad Uruguaya)"
   s.authors     = ["Fernando Briano"]
