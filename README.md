@@ -1,14 +1,18 @@
 # CiUY
+[![Gem Version](https://badge.fury.io/rb/ci_uy.svg)](http://badge.fury.io/rb/ci_uy)
+[![Build Status](https://travis-ci.org/picandocodigo/ci_uy.svg?branch=master)](https://travis-ci.org/picandocodigo/ci_uy)
+[![Code Climate](https://codeclimate.com/github/picandocodigo/ci_uy.png)](https://codeclimate.com/github/picandocodigo/ci_uy)
 
-A gem to validate Uruguayan Identity Documents (Cedula de Identidad Uruguaya)
-
-https://rubygems.org/gems/ci_uy
+A gem to validate Uruguayan Identity Documents (Cedula de Identidad
+Uruguaya) - https://rubygems.org/gems/ci_uy
 
 Install:
 
-`gem install ci_uy`
+```bash
+$ gem install ci_uy
+```
 
-Try it:
+Usage:
 ``` ruby
 fernando@hoth ~ $ rake console
 1.9.3-p484 :001 > CiUY.validate("1.111.111-1")
@@ -19,8 +23,8 @@ fernando@hoth ~ $ rake console
  => "13082956"
  ```
 
-Once the gem is installed in your system, you can use 'ci_uy' from the
-command line:
+Once the gem is installed in your system, you can also use 'ci_uy'
+from the command line:
 
 ```bash
 $ gem install ci_uy-0.0.6.gem
