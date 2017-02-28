@@ -51,5 +51,4 @@ describe CiUY do
     assert CiUY.validate(ci)
     assert CiUY.validation_digit(ci) == ci[-1]
   end
-
 end

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 module CiUY
-  def self.get_validation_digit(ci)
+  def self.validation_digit(ci)
     ci = transform(ci)
     ci = '0' + ci if ci.size == 6
     a = 0
@@ -18,7 +18,7 @@ module CiUY
     get_validation_digit(ci) == dig
   end
 
-  def self.get_random_ci
+  def self.random
     ci = rand(1_000_000..9_999_999).to_s
     ci += get_validation_digit(ci)
     ci
@@ -31,8 +31,8 @@ module CiUY
   end
 
   class << self
-    alias_method :validation_digit, :get_validation_digit
-    alias_method :validate, :validate_ci
-    alias_method :random, :get_random_ci
+    alias get_validation_digit validation_digit
+    alias validate validate_ci
+    alias get_random_ci random
   end
 end
