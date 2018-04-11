@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 module CiUY
   def self.validation_digit(ci)
     ci = transform(ci)
