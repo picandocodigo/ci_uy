@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-# -*- coding: utf-8 -*-
 require 'ci_uy'
 
 args = ARGV.dup
@@ -12,15 +11,14 @@ when ('random' || 'get_random_ci')
 when ('validation_digit' || 'get_validation_digit')
   puts CiUY.validation_digit args[1].dup
 else
-  puts <<EOS
+  puts <<-MANUAL
 
-Usage:
-  ci_uy [parameter[ci number]]
+    Usage:
+      ci_uy [parameter[ci number]]
 
-Possible parameters are:
-  validate [number]         - validates given CI number, returns true or false
-  validation_digit [number] - returns validation digit for given number CI number
-  random                    - returns a random valid CI number.
-
-EOS
+    Possible parameters are:
+      validate [number]         - validates given CI number, returns true or false
+      validation_digit [number] - returns validation digit for given number CI number
+      random                    - returns a random valid CI number.
+  MANUAL
 end
