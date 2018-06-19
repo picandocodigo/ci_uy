@@ -48,4 +48,13 @@ describe CiUY do
     assert CiUY.validate(ci)
     assert CiUY.validation_digit(ci) == ci[-1]
   end
+
+  it 'should not validate numbers smaller than 100_000' do
+    ci = '12345'
+    assert !CiUY.validate(ci)
+    ci = '17'
+    assert !CiUY.validate(ci)
+    ci = '34.993'
+    assert !CiUY.validate(ci)
+  end
 end

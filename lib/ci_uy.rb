@@ -11,6 +11,7 @@ module CiUY
 
   def self.validate_ci(ci)
     ci = transform(ci)
+    return false if ci.length < 6
     dig = ci[-1]
     ci = ci[0..-2]
     get_validation_digit(ci) == dig
