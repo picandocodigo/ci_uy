@@ -1,13 +1,14 @@
 require 'minitest/autorun'
 require 'ci_uy'
 
+# rubocop:disable Metrics/BlockLength
 describe CiUY do
   it 'should return a valid checker digit' do
     ci = '1111111'
     assert 1, CiUY.get_validation_digit(ci)
 
-    ci = '2222222'
-    assert 2, CiUY.get_validation_digit(ci)
+    ci2 = '2222222'
+    assert 2, CiUY.get_validation_digit(ci2)
   end
 
   it 'should validate numbers' do
@@ -52,9 +53,10 @@ describe CiUY do
   it 'should not validate numbers smaller than 100_000' do
     ci = '12345'
     assert !CiUY.validate(ci)
-    ci = '17'
-    assert !CiUY.validate(ci)
-    ci = '34.993'
-    assert !CiUY.validate(ci)
+    ci2 = '17'
+    assert !CiUY.validate(ci2)
+    ci3 = '34.993'
+    assert !CiUY.validate(ci3)
   end
 end
+# rubocop:enable Metrics/BlockLength
