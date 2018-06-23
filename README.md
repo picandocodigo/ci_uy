@@ -6,6 +6,8 @@
 A gem to validate Uruguayan Identity Documents (Cedula de Identidad
 Uruguaya) - https://rubygems.org/gems/ci_uy
 
+The gem receives a string and doesn't care what you use to separate the digits, it gets the numbers from the string and checks the verification digit. So all of these formats are valid: `1.111.111-1`, `1_111_111_1`, `1.111.111/1`.
+
 Install:
 
 ```bash
