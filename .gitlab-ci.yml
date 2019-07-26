@@ -1,0 +1,13 @@
+image: "ruby:2.5"
+
+before_script:
+  - ruby -v  # Print out ruby version for debugging
+  - gem install rubocop
+
+rubocop:
+  script:
+    - rubocop
+
+tests:
+  script:
+    - rake test
