@@ -1,22 +1,46 @@
 language: ruby
-rvm:
-  - 1.9.3
-  - 2.1.10
-  - 2.2.9
-  - 2.3.8
-  - 2.4.6
-  - 2.5.5
-  - 2.6.3
-  - 2.7.0-preview1
-  - jruby-19mode
-  - jruby-head
-  - ruby-head
-  - truffleruby
 install: gem install minitest
 before_script:
   - gem build ci_uy.gemspec
   - gem install ci_uy
 matrix:
+  include:
+    - os: linux
+      dist: precise
+      rvm: 1.9.3
+    - os: linux
+      dist: xenial
+      rvm: 2.1.10
+    - os: linux
+      dist: xenial
+      rvm: 2.2.9
+    - os: linux
+      dist: xenial
+      rvm: 2.3.8
+    - os: linux
+      dist: xenial
+      rvm: 2.4.6
+    - os: linux
+      dist: xenial
+      rvm: 2.5.5
+    - os: linux
+      dist: xenial
+      rvm: 2.6.3
+    - os: linux
+      dist: xenial
+      rvm: 2.7.0-preview1
+    - os: linux
+      dist: xenial
+      rvm: jruby-19mode
+    - os: linux
+      dist: xenial
+      rvm: jruby-head
+    - os: linux
+      dist: xenial
+      rvm: ruby-head
+    - os: linux
+      dist: xenial
+      rvm: truffleruby
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
