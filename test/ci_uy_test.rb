@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require 'ci_uy'
 
@@ -14,14 +16,17 @@ describe CiUY do
   it 'should validate numbers' do
     ci = '11111111'
     assert CiUY.validate_ci(ci)
+
+    ci2 = '12345672'
+    assert CiUY.validate_ci(ci2)
   end
 
   it 'should validate numbers even when using dots and dashes' do
     ci = '1.111.111-1'
     assert CiUY.validate_ci(ci)
 
-    ci = '1-111/111/1'
-    assert CiUY.validate_ci(ci)
+    ci2 = '1-111/111/1'
+    assert CiUY.validate_ci(ci2)
   end
 
   it 'should not validate wrong numbers' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name        = 'ci_uy'
   s.version     = '0.1.3'
@@ -9,7 +11,7 @@ Gem::Specification.new do |s|
   s.files       = ['lib/ci_uy.rb']
   s.homepage    = 'https://github.com/picandocodigo/ci_uy'
   s.licenses    = ['LGPL-2.1']
-  s.post_install_message =<<-MESSAGE
+  s.post_install_message = <<-MESSAGE
 
     Thanks for installing CiUY!
 
