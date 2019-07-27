@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.1] - 2019-07-27
+- Added: Changelog, Homepage, source code, bug tracker URI to metadata for RubyGems.
+
 ## [1.0.0] - 2019-07-27
 - Changed: Refactor to use frozen string literals.
 - Changed: Ruby versions supported (running in Travis): 1.9.3, 2.1.10, 2.2.9, 2.3.8, 2.4.6, 2.5.5, 2.6.3, 2.7.0-preview1, jruby-19mode, jruby-head, ruby-head, truffleruby.
