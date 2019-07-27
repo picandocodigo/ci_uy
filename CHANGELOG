@@ -1,0 +1,51 @@
+# Changelog
+
+## [1.0.0] - 2019-07-27
+- Changed: Refactor to use frozen string literals.
+- Changed: Ruby versions supported (running in Travis): 1.9.3, 2.1.10, 2.2.9, 2.3.8, 2.4.6, 2.5.5, 2.6.3, 2.7.0-preview1, jruby-19mode, jruby-head, ruby-head, truffleruby.
+- Added: Documentación en español.
+- Added: This CHANGELOG file.
+- Added: CI on GitLab (`rake test` + `rubocop`).
+- Added: truffleruby in the Travis build.
+- Removed: Dropped support for Rubinius, couldn't make it work on Travis (doesn't mean the gem won't work).
+- Removed: Post-install message warning about numbers with less than 6 digits.
+
+## [0.1.3] - 2018-06-23
+- Added: Validate numbers are larger than 6 digits.
+- Added: More documentation in README file.
+- Added: Warning about numbers with less than 6 digits.
+
+## [0.1.2] - 2018-04-11
+- Added: Support coverage in Travis for: Ruby 2.1.10, 2.3.7, 2.4.4, 2.5.1, 2.6.0-preview1. Allows Rubinius to fail in the build.
+- Removed: Some unneeded minitest dependencies.
+
+## [0.1.1] - 2018-04-11
+- Added: Help in the command line executable if used incorrectly.
+
+## [0.1.0] - 2014-04-08
+- Added: Travis CI config.
+- Removed: Support for Ruby 1.8.7, you should not be using Ruby 1.8.
+- Changed: Default 'test' task for rake.
+
+## [0.0.7] - 2014-04-01
+- Changed: Updated License.
+
+## [0.0.6] - 2014-03-05
+- Added: Command line executable.
+
+## [0.0.5] - 2014-02-24
+- Added: Rake task `rake console` to run irb including the gem.
+
+## [0.0.4] - 2013-11-21
+- Added: Aliases validate/validate_ci, validation_digit/get_validation_digit, random/get_random_ci.
+- Added: Accept integer values as input to validate.
+
+## [0.0.3] - 2013-01-23
+- Added: Validates CI numbers with 6 digits.
+- Added: Compatibility with Ruby 1.8.
+
+## [0.0.2] - 2013-01-06
+- Added: Method to get a random valid CI number
+
+## [0.0.1] - 2013-01-03
+- Initial release.
