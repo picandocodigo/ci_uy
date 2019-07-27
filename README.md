@@ -3,18 +3,29 @@
 [![Build Status](https://travis-ci.org/picandocodigo/ci_uy.svg?branch=master)](https://travis-ci.org/picandocodigo/ci_uy)
 [![Code Climate](https://codeclimate.com/github/picandocodigo/ci_uy.png)](https://codeclimate.com/github/picandocodigo/ci_uy)
 
-A gem to validate Uruguayan Identity Documents (Cedula de Identidad
-Uruguaya) - https://rubygems.org/gems/ci_uy
+## Español:
+Una gema para validar números de Cédula de Identidad Uruguaya - https://rubygems.org/gems/ci_uy
+
+La gema recibe una cadena de caracteres (o número entero) y no le importa cómo estén separados los dígitos, extrae los números de la cadena de caracteres y chequea el dígito verificador. Así que todos estos formatos son válidos: `1.111.111-1`, `1_111_111_1`, `1.111.111/1`.
+
+El algoritmo de validación es: Multiplicar cada dígito por 2, 9, 8, 7, 6, 3, 4 uno a uno, después a 10 restarle el resto de la división de la suma de la primera operación entre 10: `10 - (sum mod 10)`. Esta operación nos da el dígito verificador. Los números de cédula válidos deben tener 6 o 7 dígitos.
+
+## English
+
+A gem to validate Uruguayan Identity Documents (Cedula de Identidad Uruguaya) - https://rubygems.org/gems/ci_uy
 
 The gem receives a string (or integer) and doesn't care what you use to separate the digits, it gets the numbers from the string and checks the verification digit. So all of these formats are valid: `1.111.111-1`, `1_111_111_1`, `1.111.111/1`.
 
-Install:
+The validation algorithm is: Multiply each digit by 2, 9, 8, 7, 6, 3, 4 one to one. Then substract the remainder of the division between the sum of the first operation and 10 to 10: `10 - (sum mod 10)`. This operation gives you the verification digit. Valid CI numbers must have 6 or 7 digits.
+
+
+## Instalación/Install:
 
 ```bash
 $ gem install ci_uy
 ```
 
-Usage:
+## Uso/Usage:
 ``` ruby
 fernando@hoth ~ $ rake console
 1.9.3-p484 :001 > CiUY.validate("1.111.111-1")
@@ -25,8 +36,9 @@ fernando@hoth ~ $ rake console
  => "13082956"
  ```
 
-Once the gem is installed in your system, you can also use 'ci_uy'
-from the command line:
+🇺🇾 Una vez instalada en el sistema, también se puede usar el comando `ci_uy` desde la línea de comando:
+
+🇬🇧 Once the gem is installed in your system, you can also use the `ci_uy` command from the command line:
 
 ```bash
 $ gem install ci_uy-0.0.6.gem
