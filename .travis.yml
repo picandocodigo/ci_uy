@@ -6,12 +6,6 @@ before_script:
 matrix:
   include:
     - os: linux
-      dist: precise
-      rvm: 1.9.3
-    - os: linux
-      dist: xenial
-      rvm: 2.1.10
-    - os: linux
       dist: xenial
       rvm: 2.2.10
     - os: linux
@@ -51,3 +45,4 @@ matrix:
     - rvm: ruby-head
     - rvm: jruby-head
     - rvm: truffleruby
+    - rvm: rbx-4
