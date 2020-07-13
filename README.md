@@ -1,6 +1,7 @@
 # CiUY
 [![Gem Version](https://badge.fury.io/rb/ci_uy.svg)](http://badge.fury.io/rb/ci_uy)
 [![Build Status](https://travis-ci.org/picandocodigo/ci_uy.svg?branch=master)](https://travis-ci.org/picandocodigo/ci_uy)
+[![GitHub Actions](https://github.com/picandocodigo/ci_uy/workflows/Ruby/badge.svg?branch=master)](https://github.com/picandocodigo/ci_uy/actions)
 [![Code Climate](https://codeclimate.com/github/picandocodigo/ci_uy.png)](https://codeclimate.com/github/picandocodigo/ci_uy)
 
 ## Español:
