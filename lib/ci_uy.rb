@@ -7,8 +7,6 @@
 # The validation algorithm is:
 # Multiply each digit by 2, 9, 8, 7, 6, 3, 4 one to one
 # Then do 10 - (sum mod 10), that's the verification digit
-#
-# rubocop:disable Naming/UncommunicativeMethodParamName
 module CiUY
   def self.validation_digit(input)
     ci = transform(input)
@@ -34,10 +32,10 @@ module CiUY
     ci + get_validation_digit(ci)
   end
 
-  def self.transform(ci)
-    ci = '0' + ci if ci.size == 6
-    ci = ci.to_s if ci.is_a? Integer
-    ci.chars.reject { |i| i.match(/\D/) }.join
+  def self.transform(cedula)
+    cedula = '0' + cedula if cedula.size == 6
+    cedula = cedula.to_s if cedula.is_a? Integer
+    cedula.chars.reject { |i| i.match(/\D/) }.join
   end
 
   class << self
@@ -46,4 +44,3 @@ module CiUY
     alias get_random_ci random
   end
 end
-# rubocop:enable Naming/UncommunicativeMethodParamName
