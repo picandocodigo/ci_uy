@@ -7,22 +7,22 @@ matrix:
   include:
     - os: linux
       dist: xenial
-      rvm: 2.2.10
+      rvm: 2.2
     - os: linux
       dist: xenial
-      rvm: 2.3.8
+      rvm: 2.3
     - os: linux
       dist: xenial
-      rvm: 2.4.9
+      rvm: 2.4
     - os: linux
       dist: xenial
-      rvm: 2.5.7
+      rvm: 2.5
     - os: linux
       dist: xenial
-      rvm: 2.6.5
+      rvm: 2.6
     - os: linux
       dist: xenial
-      rvm: 2.7.0
+      rvm: 2.7
     - os: linux
       dist: xenial
       rvm: jruby-19mode
@@ -35,14 +35,7 @@ matrix:
     - os: linux
       dist: xenial
       rvm: truffleruby
-    - os: linux
-      dist: trusty
-      rvm: rbx-3
-    - os: linux
-      dist: trusty
-      rvm: rbx-4
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
     - rvm: truffleruby
-    - rvm: rbx-4
