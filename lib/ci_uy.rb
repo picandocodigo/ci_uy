@@ -33,7 +33,7 @@ module CiUY
   end
 
   def self.transform(cedula)
-    cedula = '0' + cedula if cedula.size == 6
+    cedula = "0#{cedula}" if cedula.size == 6
     cedula = cedula.to_s if cedula.is_a? Integer
     cedula.chars.reject { |i| i.match(/\D/) }.join
   end
