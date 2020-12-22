@@ -11,6 +11,8 @@ La gema recibe una cadena de caracteres (o número entero) y no le importa cómo
 
 El algoritmo de validación es: Multiplicar cada dígito por 2, 9, 8, 7, 6, 3, 4 uno a uno, después a 10 restarle el resto de la división de la suma de la primera operación entre 10: `10 - (sum mod 10)`. Esta operación nos da el dígito verificador. Los números de cédula válidos deben tener 6 o 7 dígitos.
 
+Se puede probar una interfaz gráfica de usuario para la gema en el directorio [ci_ui](https://github.com/picandocodigo/ci_uy/tree/master/ci_ui).
+
 ## English
 
 A gem to validate Uruguayan Identity Documents (Cedula de Identidad Uruguaya) - https://rubygems.org/gems/ci_uy
@@ -19,6 +21,7 @@ The gem receives a string (or integer) and doesn't care what you use to separate
 
 The validation algorithm is: Multiply each digit by 2, 9, 8, 7, 6, 3, 4 one to one. Then substract the remainder of the division between the sum of the first operation and 10 to 10: `10 - (sum mod 10)`. This operation gives you the verification digit. Valid CI numbers must have 6 or 7 digits.
 
+You can check out a graphical user interface for the gem in the [ci_ui](https://github.com/picandocodigo/ci_uy/tree/master/ci_ui) directory.
 
 ## Instalación/Install:
 
