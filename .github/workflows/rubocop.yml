@@ -2,19 +2,19 @@ name: Ruby
 on: [push, pull_request]
 jobs:
   test:
-    name: "Run tests"
+    name: "Rubocop"
     strategy:
       fail-fast: false
       matrix:
-        ruby: [ 2.5, 2.6, 2.7, head, jruby-9.2, jruby-head, truffleruby ]
+        ruby: [ 2.7 ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
-    - name: Build and test with Rake
+    - name: Run Rubocop
       run: |
         ruby -v
         bundle install --jobs 4 --retry 3
-        bundle exec rake
+        bundle exec rubocop
