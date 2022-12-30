@@ -1,6 +1,7 @@
 # CiUY
 [![Gem Version](https://badge.fury.io/rb/ci_uy.svg)](http://badge.fury.io/rb/ci_uy)
-[![GitHub Actions](https://github.com/picandocodigo/ci_uy/workflows/Ruby/badge.svg?branch=master)](https://github.com/picandocodigo/ci_uy/actions)
+[![Unit tests](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml)
+[![Rubocop](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml)
 [![Code Climate](https://codeclimate.com/github/picandocodigo/ci_uy.png)](https://codeclimate.com/github/picandocodigo/ci_uy)
 
 ## Español:
