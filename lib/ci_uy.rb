@@ -11,7 +11,7 @@ module CiUY
   def self.validation_digit(input)
     ci = transform(input)
     a = []
-    (0..6).each do |i|
+    7.times do |i|
       a << ('2987634'[i].to_i * ci[i].to_i)
     end
     (10 - (a.inject(:+) % 10)).to_s[-1]
