@@ -1,2 +1,6 @@
 *.gem
 Gemfile.lock
+.ruby-version
+.ruby-gemset
+# Gladiator (Glimmer Editor)
+.gladiator
