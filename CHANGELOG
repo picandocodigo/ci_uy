@@ -3,6 +3,10 @@ Scroll down for English
 
 # Español
 
+## [1.0.2] - 2025-05-27
+- Cambio: Estilo de código módulo principal
+- - Cambio: Versiones de Ruby testeadas: '2.7', '3.0', '3.1', '3.2', '3.3', '3.4', 'head', 'jruby-9.3', 'jruby-9.4', 'jruby-10', 'jruby-head', 'truffleruby'
+
 ## [1.0.1] - 2019-07-27
 - Agregado: URIs de Changelog, Sitio web, código fuente, bug tracker a la metadata para RubyGems.
 - Agregado: Encontré cómo hacer andar Rubinius en Travis. Ejecutando CI para rbx-3 y rbx-4.
@@ -57,6 +61,10 @@ Scroll down for English
 - Versión inicial.
 
 # English
+
+## [1.0.2] - 2025-05-27
+- Changed: Main module code style
+- Changed: Tested versions of Ruby: '2.7', '3.0', '3.1', '3.2', '3.3', '3.4', 'head', 'jruby-9.3', 'jruby-9.4', 'jruby-10', 'jruby-head', 'truffleruby'
 
 ## [1.0.1] - 2019-07-27
 - Added: Changelog, Homepage, source code, bug tracker URI to metadata for RubyGems.
