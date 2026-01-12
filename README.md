@@ -2,7 +2,6 @@
 [![Gem Version](https://badge.fury.io/rb/ci_uy.svg)](http://badge.fury.io/rb/ci_uy)
 [![Unit tests](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml)
 [![Rubocop](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml)
-[![Codeberg](https://github.com/user-attachments/assets/ff74aac7-a7af-4918-bb58-e2d0b2427d66)](https://codeberg.org/picandocodigo/ci_uy)
 
 ## Español:
 Una gema para validar números de Cédula de Identidad Uruguaya - https://rubygems.org/gems/ci_uy
