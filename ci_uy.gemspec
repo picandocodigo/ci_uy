@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     'source_code_uri' => 'https://github.com/picandocodigo/ci_uy/',
     'bug_tracker_uri' => 'https://github.com/picandocodigo/ci_uy/issues'
   }
+  s.add_development_dependency 'debug' unless defined?(JRUBY_VERSION)
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rubocop'
