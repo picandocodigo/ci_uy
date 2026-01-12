@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email                 = 'fernando@picandocodigo.net'
   s.files                 = ['lib/ci_uy.rb']
   s.homepage              = 'https://codeberg.org/picandocodigo/ci_uy'
-  S.licenses              = ['LGPL-2.1-or-later']
+  s.licenses              = ['LGPL-2.1-or-later']
   s.executables << 'ci_uy'
   s.metadata = {
     'homepage_uri' => 'https://codeberg.org/picandocodigo/ci_uy',
