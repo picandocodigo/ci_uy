@@ -23,8 +23,7 @@ module CiUY
       ci = transform(input).chars.to_a
       return false if ci.length < 6
 
-      digit = ci[-1]
-      ci = ci[0..-2]
+      digit = ci.pop
       get_validation_digit(ci.join) == digit
     end
 
