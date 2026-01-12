@@ -3,7 +3,7 @@ Scroll down for English
 
 # Español
 
-## [1.0.2] - 2026-01-12
+## [1.1.0] - 2026-01-12
 - Cambio: Estilo de código módulo principal.
 - Cambio: Refactoreo mínimo, simplificando 2 líneas de código a 1.
 - Dev: Agrega 'debug' como dependencia de desarrollo.
