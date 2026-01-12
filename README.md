@@ -2,7 +2,7 @@
 [![Gem Version](https://badge.fury.io/rb/ci_uy.svg)](http://badge.fury.io/rb/ci_uy)
 [![Unit tests](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/ruby.yml)
 [![Rubocop](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml/badge.svg?branch=main)](https://github.com/picandocodigo/ci_uy/actions/workflows/rubocop.yml)
-[![Code Climate](https://codeclimate.com/github/picandocodigo/ci_uy.png)](https://codeclimate.com/github/picandocodigo/ci_uy)
+[![Codeberg](https://github.com/user-attachments/assets/ff74aac7-a7af-4918-bb58-e2d0b2427d66)](https://codeberg.org/picandocodigo/ci_uy)
 
 ## Español:
 Una gema para validar números de Cédula de Identidad Uruguaya - https://rubygems.org/gems/ci_uy
@@ -42,7 +42,7 @@ fernando@hoth ~ $ rake console
 
 🇺🇾 Una vez instalada en el sistema, también se puede usar el comando `ci_uy` desde la línea de comando:
 
-🇬🇧 Once the gem is installed in your system, you can also use the `ci_uy` command from the command line:
+🏴󠁧󠁢󠁳󠁣󠁴󠁿 Once the gem is installed in your system, you can also use the `ci_uy` command from the command line:
 
 ```bash
 $ gem install ci_uy-0.0.6.gem
