@@ -3,4 +3,4 @@
 source 'https://rubygems.org'
 
 gem 'ci_uy'
-gem 'libui'
+gem 'glimmer-dsl-libui'
